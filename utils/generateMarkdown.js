@@ -45,53 +45,54 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+# ${data.title}
+
+${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
+
+## Description
+
+  ${data.description}
+  
+## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Links](#links)
+  * [License](#license)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+## Installation
+
+  ${data.installation}
+
+## Usage
+
+  ${data.usage}
+
+## Links
+
+  * Application URL: (https://${data.username}.github.io/${data.repository}/)
+  * Github Repository URL: (https://github.com/${data.username}/${data.repository})
+  
+${renderLicenseSection(data.license)}
 
   ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
-
-  ## Description
-
-    ${data.description}
   
-  ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Links](#links)
-    * [License](#license)
-    * [Contributions](#contributions)
-    * [Tests](#tests)
-    * [Questions](#questions)
-  
-  ## Installation
+## Contributions
 
-    ${data.installation}
+  ${data.contributing}
 
-  ## Usage
+## Tests
 
-    ${data.usage}
+  ${data.tests}
 
-  ## Links
+## Questions
 
-    * Application URL: (https://${data.username}.github.io/${data.repository}/)
-    * Github Repository URL: (https://github.com/${data.username}/${data.repository})
-  
-  ${renderLicenseSection(data.license)}
+  [![GitHub](https://img.shields.io/badge/My%20GitHub-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/${data.username})
 
-    ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
-  
-  ## Contributions
-
-    ${data.contributing}
-
-  ## Tests
-
-    ${data.tests}
-
-  ## Questions
-
-    [![GitHub](https://img.shields.io/badge/My%20GitHub-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/${data.username})
-
-    Reach out to me at ${data.email} with any questions about the project.
+  Reach out to me at ${data.email} with any questions about the project.
 `;
 }
 
