@@ -22,7 +22,14 @@
 
 ## Usage
 
-  The application will be started by using the following command: node index.js
+  The application will be started by using the following command: 
+  ```
+  node index.js
+  ```
+
+  Gif of how it works!
+
+  ![usage](utils/ProfessionReadmeGenerator.gif)
 
 ## Links
 
