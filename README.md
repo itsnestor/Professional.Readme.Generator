@@ -5,7 +5,7 @@
 
 ## Description
 
-  Using the cammand line to generate a professional ReadMe.md file from user inputs using inquirer.js.
+  Using the command line to generate a professional ReadMe.md file from user inputs using inquirer.js.
   
 ## Table of Contents
   * [Installation](#installation)
