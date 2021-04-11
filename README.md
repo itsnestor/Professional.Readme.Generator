@@ -18,11 +18,11 @@
   
 ## Installation
 
-  
+  Make sure to have node.js installed before running application: https://nodejs.org/en/download/package-manager/
 
 ## Usage
 
-  
+  The application will be started by using the following command: node index.js
 
 ## Links
 
